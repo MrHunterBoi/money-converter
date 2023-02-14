@@ -1,0 +1,17 @@
+<main>
+  <div class="group">
+    <select (change)="changeRate($event, 0)">
+      <option *ngFor="let item of currencyValues">{{item.cc}}</option>
+    </select>
+    <input (ngModelChange)="changeValues($event, 0)" [(ngModel)]="fields[0].input" type="text"
+           placeholder="Value goes here"/>
+  </div>
+  <p>⇔</p>
+  <div class="group">
+    <input (ngModelChange)="changeValues($event, 1)" [(ngModel)]="fields[1].input" type="text"
+           placeholder="Value goes here"/>
+    <select (change)="changeRate($event, 1)">
+      <option *ngFor="let item of currencyValues">{{item.cc}}</option>
+    </select>
+  </div>
+</main>

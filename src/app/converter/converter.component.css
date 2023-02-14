@@ -1,0 +1,52 @@
+main {
+  background: #525252;
+  display: flex;
+  border-radius: 15px;
+  justify-content: center;
+  gap: 8%;
+  padding: 1vh 0.2vw;
+}
+
+main, input, select, option {
+  color: white;
+}
+
+option:focus {
+  color: #ffffff;
+}
+
+.group {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 5px;
+  max-width: 15vw;
+}
+
+input, select {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+}
+
+input:focus, select:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: #b4b4b4;
+  text-align: center;
+}
+
+input {
+  max-width: 70%;
+}
+
+option {
+  background-color: #545454;
+  padding: 50px 0;
+}
+
+.option:hover {
+  background-color: red;
+}

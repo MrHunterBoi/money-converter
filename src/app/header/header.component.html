@@ -1,0 +1,7 @@
+<header>
+  <ul *ngIf="currencyValues">
+    <ng-container *ngFor="let item of currencyValues">
+      <p *ngIf="item.cc !== 'UAH'">{{ item.cc }}: {{ item.rate }}₴</p>
+    </ng-container>
+  </ul>
+</header>

@@ -1,0 +1,13 @@
+header {
+  background: #525252;
+  margin: 5% 0;
+  border-radius: 15px;
+}
+
+ul {
+  margin: 0;
+  padding: 0 12%;
+  display: flex;
+  justify-content: space-between;
+  color: white
+}
